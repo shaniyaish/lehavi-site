@@ -18,10 +18,6 @@
       text-align: center;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    header h1 {
-      margin: 0;
-      color: #c71585;
-    }
     nav a {
       margin: 0 1rem;
       color: #c71585;
@@ -32,6 +28,28 @@
       padding: 2rem;
       max-width: 800px;
       margin: auto;
+    }
+    h1, h2, h3 {
+      color: #c71585;
+    }
+    .card {
+      background: #fff;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #c71585;
+      color: white;
+      border: none;
     }
   </style>
 </head>
@@ -46,11 +64,47 @@
     </nav>
   </header>
 
-  <section>
-    <h2>ברוכים הבאים!</h2>
-    <p>העמותה פועלת לתמוך בזוגות צעירים לקראת הקמת בית בישראל. נרגשים שאתם כאן איתנו.</p>
+  <section id="about">
+    <div class="card">
+      <h2>על העמותה</h2>
+      <p>
+        עמותת להב״י - למען הקמת בית בישראל פועלת מתוך חזון לתמוך בזוגות בתחילת דרכם.
+        אנו מאמינים שכל זוג זכאי להתחיל את חייו עם ביטחון, תמיכה ותחושת שייכות.
+      </p>
+    </div>
+  </section>
+
+  <section id="donate">
+    <div class="card">
+      <h2>תרומה לזוגות צעירים</h2>
+      <p>
+        כל תרומה מסייעת לזוגות להתחיל את חייהם המשותפים בביטחון. אנו מודים לך על השותפות.
+      </p>
+      <button onclick="alert('המערכת לתרומות תתווסף בהמשך')">לתרומה</button>
+    </div>
+    <div class="card">
+      <h2>תרומה לעמותה</h2>
+      <p>
+        תמכו בפעילות העמותה עצמה, כדי שנוכל להרחיב את היקף הסיוע וההשפעה.
+      </p>
+      <button onclick="alert('המערכת לתרומות תתווסף בהמשך')">לתרומה</button>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>צור קשר</h2>
+      <form>
+        <input type="text" placeholder="שם מלא" required>
+        <input type="email" placeholder="אימייל" required>
+        <textarea placeholder="הודעה" required></textarea>
+        <button type="submit">שלח</button>
+      </form>
+    </div>
   </section>
 
 </body>
 </html>
+
+
 
